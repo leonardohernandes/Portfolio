@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR" style="overflow: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo Hernandes</title>
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/stacks.css">
+
+    <script src="https://kit.fontawesome.com/00f0dac61e.js" crossorigin="anonymous"></script>
+
+    <!-- <i class="fa-solid fa-bars" id="bars" onclick="abrir()"></i>
+    <i class="fa-solid fa-xmark" id="close"></i> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+
+        <!-- Início do menu -->
+        <div id="menu-bar">
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <div id="menu-block" class="menu-block">
+                <ul class="nav" id="nav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./quem-sou.html">Quem Sou</a></li>
+                    <li><a href="./stacks.html">Stacks</a></li>
+                    <li><a href="./projetos.html">Projetos</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+        <!-- Fim do menu  -->
+
+        <!-- Início do conteúdo -->
+        <main id="container-main">
+            <div class="background-style"></div>
+            <div class="background-style"></div>
+            <div class="stacks-column">
+
+            <section>
+                <h1 class="title-stack">Stack</h1>
+                <div class="carossel-Container">
+                    <div class="btnCarossel BtnBack disable">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="carossel-Slide" id="carossel-Slide">
+                        <div class="item"><img src="src/img/icon-html5.png"></div>
+                        <div class="item"><img src="src/img/icon-css3.png"></div>
+                        <div class="item"><img src="src/img/icon-js.png"></div>
+                        <div class="item"><img src="src/img/icon-git.png"></div>
+                        <div class="item"><img src="src/img/icon-react.png"></div>
+                        <div class="item"><img src="src/img/icon-python.png"></div>
+                        <div class="item"><img src="src/img/icon-mysql.png"></div>
+                        <div class="item"><img src="src/img/icon-wordpress.png"></div>
+                        <div class="item"><img src="src/img/icon-photoshop.png"></div>
+                    </div>
+                    <div class="btnCarossel BtnNext">
+                        <span id="seta"><i class="fa-solid fa-angle-right"></i></span>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <td class="text-bar">HTML</td>
+                        <td class="stackbar"><div class="spanbar-exc"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="text-bar">CSS</td>
+                        <td class="stackbar"><div class="spanbar-exc"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="text-bar">JavaScript</td>
+                        <td class="stackbar"><div class="spanbar-good"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="text-bar">MySql</td>
+                        <td class="stackbar"><div class="spanbar-med"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="text-bar">React e React Native</td>
+                        <td class="stackbar"><div class="spanbar-exc"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="text-bar">Git</td>
+                        <td class="stackbar"><div class="spanbar-good"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="text-bar">Wordpress</td>
+                        <td class="stackbar"><div class="spanbar-exc"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="text-bar">Python</td>
+                        <td class="stackbar"><div class="spanbar-med"></div></td>
+                    </tr>
+                </table>
+            </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <a href="./projetos.html"><p>Confira os meus Projetos</p></a>
+            <a href="./projetos.html"><i class="fa-solid fa-angles-down"></i></a>
+        </footer>
+        <!-- Fim do conteúdo -->
+    </div>
+
+    <script src="src/scripts/script.js"></script>
+    <script src="src/scripts/stacks.js"></script>
+</body>
+</html>

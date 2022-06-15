@@ -1,0 +1,204 @@
+.background-style:nth-child(1){
+    height:400px;
+    width:400px;
+    background-color: #001747;
+    border-radius: 50%;
+    filter: blur(10px);
+    display:inline-block;
+    position: absolute;
+    bottom: -200px;
+    left:-200px;
+    z-index: 1;
+}
+
+.background-style:nth-child(2){
+    height:400px;
+    width:400px;
+    background-color: #001747;
+    border-radius: 50%;
+    filter: blur(10px);
+    display:inline-block;
+    position: absolute;
+    top: -200px;
+    right:-200px;
+    z-index: 1;
+}
+.container{
+    background-color:#131313;
+}
+
+.title-stack{
+    text-align: center;
+    font-size: 32px;
+    margin: 15px 0px 20px 0px;
+}
+
+.stacks-column{
+    display: flex;
+    justify-content: center;
+    max-width: 60%;
+    height:100vh;
+    z-index: 5;
+    margin: 0 auto;
+    color:#fff;
+    z-index: 2;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    position: absolute;
+    padding: 5px 0;
+    text-decoration: none;
+    z-index: 3;
+}
+
+.footer a{
+    color:#fff;
+    text-decoration: none;
+}
+
+section{
+    width: 100%;
+}
+
+.carossel-Container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.carossel-Slide{
+    position: relative;
+    display: flex;
+    height: auto;
+    width: 97%;
+    overflow: visible;
+}
+
+.item{
+    position: relative;
+    display: flex;
+    right: 0%;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    transition: right 1s ease-out;
+    cursor: pointer;
+}
+
+.item{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.item img{
+    width: 90px;
+    height: 90px;
+}
+
+.btnCarossel{
+    position: absolute;
+    background: #0000008c;
+    padding:5px;
+    z-index: 1; 
+}
+
+.BtnBack{
+    right: 0;
+}
+
+.BtnNext{
+    left: 0;
+}
+
+.btnCarossel:hover{
+    color: rgba(255, 255, 255, 0.747); 
+}
+
+table {
+    border:1px solid #fff;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+tr{
+    border:1px solid #fff;
+}
+
+.stackbar{
+    width:75%;
+}
+
+.text-bar{
+    width:20%;
+    padding: 5px;
+    font-size: 14px;
+    border-right: solid 1px #fff;
+}
+
+.spanbar-exc{
+    border: solid 1px #fff;
+    border-radius: 40px;
+    width: 95%;
+    height: 10px;
+    padding: 1px;
+    margin: 7px;
+    background: linear-gradient(270deg, #000000 5%, #00AA11 10%); height: 10px;
+    animation: 3s bars-effect-exc linear;
+}
+
+.spanbar-good{
+    border: solid 1px #fff;
+    border-radius: 40px;
+    width: 97%;
+    height: 10px;
+    padding: 1px;
+    margin: 7px;
+    background: linear-gradient(270deg, #000000 15%, #00AA11 20%); height: 10px;
+    animation: 3s bars-effect-good linear;
+}
+
+.spanbar-med{
+    border: solid 1px #fff;
+    border-radius: 40px;
+    width: 97%;
+    height: 10px;
+    padding: 1px;
+    margin: 7px;
+    background: linear-gradient(270deg, #000000 25%, #d3d602 30%); height: 10px;
+    animation: 3s bars-effect-med linear;
+}
+
+@keyframes bars-effect-exc {
+    0%    {background: linear-gradient(270deg, #000000 100%, #f14d4d 40%); height: 10px;}
+    20%   {background: linear-gradient(270deg, #000000 80%, #f14d4d 90%); height: 10px;}
+    40%   {background: linear-gradient(270deg, #000000 60%, #d3d602 70%); height: 10px;}
+    60%   {background: linear-gradient(270deg, #000000 40%, #d3d602 50%); height: 10px;}
+    80%   {background: linear-gradient(270deg, #000000 20%, #00AA11 30%); height: 10px;}
+    100%  {background: linear-gradient(270deg, #000000 5%, #00AA11 10%); height: 10px;}
+}
+
+@keyframes bars-effect-good {
+    0%    {background: linear-gradient(270deg, #000000 100%, #f14d4d 40%); height: 10px;}
+    20%   {background: linear-gradient(270deg, #000000 80%, #f14d4d 90%); height: 10px;}
+    40%   {background: linear-gradient(270deg, #000000 60%, #d3d602 70%); height: 10px;}
+    60%   {background: linear-gradient(270deg, #000000 40%, #d3d602 50%); height: 10px;}
+    80%   {background: linear-gradient(270deg, #000000 20%, #00AA11 30%); height: 10px;}
+    100%  {background: linear-gradient(270deg, #000000 15%, #00AA11 20%); height: 10px;}
+}
+
+@keyframes bars-effect-med {
+    0%    {background: linear-gradient(270deg, #000000 100%, #f14d4d 40%); height: 10px;}
+    20%   {background: linear-gradient(270deg, #000000 80%, #f14d4d 90%); height: 10px;}
+    40%   {background: linear-gradient(270deg, #000000 60%, #d3d602 70%); height: 10px;}
+    60%   {background: linear-gradient(270deg, #000000 40%, #d3d602 50%); height: 10px;}
+    80%  {background: linear-gradient(270deg, #000000 25%, #d3d602 30%); height: 10px;}
+}
